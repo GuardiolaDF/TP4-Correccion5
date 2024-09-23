@@ -13,7 +13,7 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Bruno Ace SC",  sans-serif;
+  --heading-font: "Raleway",  sans-serif;
   --nav-font: "Roboto",  sans-serif;
 }
 
@@ -39,13 +39,116 @@
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
-.bruno-ace-sc-regular {
-  font-family: "Bruno Ace SC", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+
+.service-item .icon {
+  display: flex;
+  align-items: center; /* Centra la imagen verticalmente */
+  justify-content: center; /* Centra la imagen horizontalmente si es necesario */
 }
 
+.service-item .img-icon {
+  max-width: 100px; /* Ajustá el ancho según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
 
+.service-item .icon {
+  width: 64px; /* Ancho del contenedor del ícono */
+  height: 64px; /* Alto del contenedor del ícono */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.service-item .service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen se ajuste al contenedor manteniendo la proporción */
+  border-radius: 50%; /* Esto es opcional si querés que las imágenes sean circulares como los iconos originales */
+}
+
+.product-item {
+  background-color: ; /* Color bordó */
+  padding: 10px;
+  width: 300px; /* Tamaño de las tarjetas */
+  height: 300px; /* Ajusta la altura según prefieras */
+  overflow: hidden; /* Para ocultar las partes de la imagen que se recortan */
+  border-radius: 15px; /* Esquinas redondeadas */
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen llene todo el espacio de la tarjeta */
+  border-radius: 15px; /* Esquinas redondeadas */
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px; /* Agregar un espacio entre cada item */
+}
+
+.icon {
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+  width: 50px; /* Asegura que las imágenes PNG se ajusten bien */
+  height: 50px;
+  background-color: transparent;  /* Eliminamos cualquier color de fondo */
+  width: 60px;                    /* Define el tamaño del contenedor del ícono */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;             /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+#services .service-item {
+  display: flex;
+  align-items: flex-start; /* Cambiado a flex-start para alinear desde arriba */
+  margin-bottom: 20px; /* Espacio entre ítems */
+}
+
+#services .service-item .icon {
+  width: 60px; /* Ancho del contenedor del ícono */
+  height: 60px; /* Alto del contenedor del ícono */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px; /* Espacio entre el ícono y el texto */
+  background-color: transparent; /* Sin fondo */
+}
+
+#services .service-item .img-icon {
+  max-width: 100%; /* Ajusta el ancho según el contenedor */
+  max-height: 100%; /* Mantiene la proporción sin deformar */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+#services .service-item .title {
+  display: flex;
+  align-items: center; /* Centra el texto en el eje vertical */
+}
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* Clase personalizada para el logo */
+.logo-custom-size img {
+  max-width: 130%; /* Incrementa el tamaño en un 8% */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: contain; /* Asegura que la imagen no se distorsione dentro del contenedor */
+}
 .light-background {
   --background-color: #f9f8ff;
   --surface-color: #ffffff;
@@ -798,7 +901,7 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 56px;
 }
@@ -1076,8 +1179,12 @@ section,
 }
 
 .testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
+  box-sizing: border-box; /* Cambiado a border-box para incluir padding en el tamaño total */
+  min-height: 400px; /* Establecer altura mínima */
+  max-height: 400px; /* Establecer altura máxima */
+  display: flex; /* Para alinear el contenido verticalmente */
+  flex-direction: column; /* Alinear en columna */
+  justify-content: space-between; /* Espacio entre elementos */
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1130,6 +1237,7 @@ section,
   border-radius: 6px;
   position: relative;
   z-index: 1;
+  flex-grow: 1; /* Permite que el párrafo ocupe el espacio disponible */
 }
 
 .testimonials .swiper-wrapper {
@@ -1152,7 +1260,6 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
-
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
