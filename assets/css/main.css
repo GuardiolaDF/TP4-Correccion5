@@ -46,7 +46,6 @@
   color: #800020; /* Aquí puedes ajustar el valor hexadecimal a tu tono de bordó */
 }
 
-----------------------
 body {
   margin: 0;
   padding: 0;
@@ -66,52 +65,44 @@ img {
   height: auto; /* Mantiene la proporción */
   object-fit: contain; /* Ajusta la imagen sin recortes */
 }
------------------
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 20px; /* Agrega espacio alrededor de la sección */
-  }
 
-  .hero-section h1, .hero-section h2 {
-    text-align: center; /* Alinea el texto al centro si prefieres esa opción */
-    padding-left: 10px; /* Si quieres solo agregar espacio a la izquierda */
-    padding-right: 10px; /* Evita que el texto quede pegado a los bordes */
-  }
-}
--------------------
-@media (max-width: 768px) {
-  .accessories-section img {
-    max-width: 100%; /* Asegura que la imagen no sea más grande que el contenedor */
-    height: auto; /* Mantiene la proporción */
-    padding: 0 10px; /* Agrega un poco de espacio dentro de los márgenes */
-  }
-}
-------------------
-
-@media (max-width: 768px) {
-  .panoramic-screen-text {
-    font-size: 3vw; /* Ajusta el tamaño del texto de acuerdo al ancho de la pantalla */
-    padding: 0 10px; /* Asegura que no quede pegado a los márgenes */
-  }
-}
-----------------------
+/* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
   body {
     padding: 0 10px; /* Asegura que todo el contenido tenga un pequeño margen en pantallas pequeñas */
     overflow-x: hidden; /* Evita que haya desbordamiento horizontal */
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  .hero-section {
+    padding: 20px; /* Espacio en todo el contenedor */
+  }
+
+  .hero-section h1, .hero-section h2 {
+    margin: 0; /* Resetea el margen por defecto */
+    padding-left: 20px; /* Añade margen a la izquierda */
+    padding-right: 20px; /* Añade margen a la derecha */
+    text-align: center; /* Centra el texto */
+  }
+
+  .accessories-section {
+    overflow: hidden; /* Asegúrate de que nada se desborde */
+    padding: 0 10px; /* Espacio en los lados */
+  }
+
+  .accessories-section img {
+    max-width: 100%; /* Asegúrate de que la imagen no supere el 100% del contenedor */
+    height: auto; /* Mantiene la proporción */
+  }
+
+  .panoramic-screen-text {
+    font-size: 3vw; /* Ajusta el tamaño del texto de acuerdo al ancho de la pantalla */
+    padding: 0 10px; /* Asegura que no quede pegado a los márgenes */
   }
 
   h1, h2, h3, p {
     word-wrap: break-word; /* Evita que el texto se salga del contenedor */
   }
-}
-
----------------------
+}---------------------
 /* Media queries */
 @media (min-width: 992px) {
   .features-image {
