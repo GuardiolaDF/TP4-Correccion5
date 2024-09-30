@@ -20,10 +20,10 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #465953; /* Background color for the entire website, including individual sections */
-  --default-color: #EBB2C1; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #EBB2C1; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #440006; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #440006; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: #EBB2C1; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -41,6 +41,88 @@
 
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
+
+.text-bordo {
+  color: #800020; /* Aquí puedes ajustar el valor hexadecimal a tu tono de bordó */
+}
+
+
+.icon,
+.feature-icon {
+  width: 60px; /* Tamaño ajustado para que sean uniformes */
+  height: 60px;
+}
+
+.img-icon {
+  width: 60px; /* Ajuste también para los íconos en la sección Services */
+  height: 60px;
+}
+.features-item .feature-icon {
+  margin-right: 20px; /* Ajustá este valor según sea necesario */
+}
+/* Asegurarte de que el ícono se mantenga centrado verticalmente */
+.features-item .feature-icon {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0; /* Evita espacio extra en la línea del ícono */
+}
+
+/* Estilos para la sección con imagen */
+.separator-bg {
+  position: relative;
+  width: 100%;
+}
+
+.separator-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 10vw; /* Añadir margen a los lados para que no toque los bordes */
+}
+
+.overlay-text h1 {
+  font-size: 6vw; /* Ajustar el tamaño del texto en función del ancho de la ventana */
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap; /* Impide que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier desbordamiento si es necesario */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .overlay-text h1 {
+    font-size: 10vw; /* Ajustar para pantallas más pequeñas */
+  }
+}
+
+/* Estilos para la paginación del carrusel */
+#product-carousel .swiper-pagination {
+  margin-top: 20px; /* Espacio entre los bullets y el contenido superior */
+}
+
+#product-carousel .swiper-pagination .swiper-pagination-bullet {
+  width: 12px; /* Ancho del bullet */
+  height: 12px; /* Alto del bullet */
+  background-color: transparent; /* Fondo transparente */
+  border: 1px solid #EBB2C1; /* Borde rosado */
+  opacity: 1; /* Opacidad */
+  margin: 0 5px; /* Espacio entre bullets */
+}
+
+#product-carousel .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #EBB2C1; /* Relleno rosado para el bullet activo */
+  border: 1px solid #EBB2C1; /* Borde rosado para el bullet activo */
+}
 
 
 .service-item .icon {
@@ -611,8 +693,16 @@ h6 {
 }
 
 .footer .footer-about .logo {
-  line-height: 1;
-  margin-bottom: 25px;
+  line-height: 1; /* Mantén este valor para que el título esté cerca del logo */
+  margin-bottom: 10px; /* Reduce la separación entre el logo y el párrafo */
+}
+
+.footer .footer-about p {
+  font-size: 14px; /* Tamaño de texto recomendado */
+  font-family: var(--heading-font);
+  line-height: 1.4; /* Interlineado recomendado para párrafos */
+  margin-top: 0; /* Elimina espacio superior si es necesario */
+  margin-bottom: 10px; /* Ajusta este valor según la separación que quieras */
 }
 
 .footer .footer-about .logo img {
@@ -628,10 +718,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.footer .footer-about p {
-  font-size: 14px;
-  font-family: var(--heading-font);
-}
 
 .footer .social-links a {
   display: flex;
@@ -1169,7 +1255,6 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 0;
 }
-
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -1234,6 +1319,7 @@ section,
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
   background: var(--surface-color);
+  color: #440006; 
   border-radius: 6px;
   position: relative;
   z-index: 1;
@@ -1245,7 +1331,7 @@ section,
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 20px; /* Espacio entre los bullets y el contenido superior */
   position: relative;
 }
 
@@ -1254,11 +1340,12 @@ section,
   height: 12px;
   background-color: var(--background-color);
   opacity: 1;
-  border: 1px solid var(--accent-color);
+  border: 1px solid #EBB2C1;
+  margin-top: 30px; /* Ajusta este valor para aumentar o disminuir la separación */
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: #EBB2C1;
 }
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -1462,12 +1549,11 @@ section,
     margin: 0 auto 30px auto;
   }
 }
-
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
 .faq .faq-container .faq-item {
-  background-color: var(--surface-color);
+  background-color: #EBB2C1;
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
@@ -1480,6 +1566,7 @@ section,
   margin-bottom: 0;
 }
 
+/* Aseguramos que el título h3 tenga color bordó siempre */
 .faq .faq-container .faq-item h3 {
   font-weight: 600;
   font-size: 16px;
@@ -1489,15 +1576,17 @@ section,
   cursor: pointer;
   display: flex;
   align-items: center;
+  color: #440006; /* Título siempre en bordó */
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
+  color: #440006;
   padding-right: 5px;
 }
 
+/* Cambia el color al hacer hover sobre el título */
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: #440006; /* En hover también bordó */
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -1505,12 +1594,12 @@ section,
   grid-template-rows: 0fr;
   transition: 0.3s ease-in-out;
   visibility: hidden;
-  opacity: 0;
 }
 
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
+  color: #440006; /* Aseguramos que el contenido también sea bordó */
 }
 
 .faq .faq-container .faq-item .faq-toggle {
@@ -1524,16 +1613,17 @@ section,
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
+  color: #440006;
 }
 
 .faq .faq-container .faq-active {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  background-color: #EBB2C1;
+  border-color: #EBB2C1;
 }
 
+/* Cuando se activa el item, el título y el contenido ya están bordó */
 .faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
+  color: #440006; /* Título en bordó cuando está activo */
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -1545,9 +1635,8 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+  color: #440006;
 }
-
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/

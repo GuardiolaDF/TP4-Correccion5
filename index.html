@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Techie Bootstrap Template</title>
+  <title>Mystique, Dario Guardiola</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+<!-- Favicon en formato PNG -->
+<link rel="icon" href="assets/img/Favicon.png" type="image/png">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" href="assets/img/Favicon.png" sizes="180x180">
 
   <!-- Fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,9 +52,9 @@
             <li><a href="#hero" class="active">Inicio</a></li>
             <li><a href="#about">Descripción</a></li>
             <li><a href="#services">Características</a></li>
-            <li><a href="#portfolio">Testimonios</a></li>
-            <li><a href="#team">FAQs</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#features">Ficha técnica</a></li>
+            <li><a href="#testimonials">Testimonios</a></li>
+            <li><a href="#faq">FAQs</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -63,25 +64,22 @@
   
     <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section accent-background">
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Aspiradora mistyque</h1>
-            <p>Tu hogar, impecable. Tu vida, sin límites. </p>
-            <div class="d-flex">
-            
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/Aspiradora1.png" class="img-fluid animated" alt="">
-          </div>
+    <!-- Hero Section --><section id="hero" class="hero section accent-background" style="transform: scale(1.1); transform-origin: center;">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h1>Aspiradora mistyque</h1>
+        <p>Tu hogar, impecable. Tu vida, sin límites.</p>
+        <div class="d-flex">
+          <!-- Otros elementos opcionales -->
         </div>
       </div>
-
-    </section><!-- /Hero Section -->
+      <div class="col-lg-6 order-1 order-lg-2 hero-img">
+        <img src="assets/img/Aspiradora1.png" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 <!-- About Section -->
 <!-- About Section -->
 <!-- About Section -->
@@ -98,9 +96,9 @@
 
       <div class="col-lg-6 order-2 order-lg-1 content d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
         <div>
-          <h3 style="margin-bottom: 1.5rem;">Todo lo que la aspiradora Mystique hace por vos.</h3>
+          <h3 style="margin-bottom: 1.5rem;">Todo lo que Mystique hace por vos</h3>
           <p class="fst-italic" style="margin-bottom: 1.5rem;">
-            La aspiradora Mystique de Electrolux está diseñada para brindarte la máxima comodidad y eficiencia en la limpieza de tu hogar. Gracias a su tecnología avanzada y su diseño ergonómico, disfrutarás de un ambiente más saludable y libre de alérgenos, con el mínimo esfuerzo.
+            Diseñada para brindarte la máxima comodidad y eficiencia en la limpieza de tu hogar. Disfrutarás de un ambiente más saludable y libre de alérgenos.
           </p>
           <ul style="margin-top: 1rem;">
             <li><i class="bi bi-check-circle"></i> <span>Elimina hasta el 99,9% de impurezas del aire.</span></li>
@@ -115,75 +113,6 @@
   </div> <!-- Cierre de la sección -->
 
 </section>
-
-<!-- Carrousel Section -->
-<section id="product-carousel" class="carousel section"> 
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          },
-          "breakpoints": {
-            "320": {
-              "slidesPerView": 1,
-              "spaceBetween": 40
-            },
-            "1200": {
-              "slidesPerView": 3,
-              "spaceBetween": 20
-            }
-          }
-        }
-      </script>
-      <div class="swiper-wrapper">
-
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="product-item">
-            <img src="assets/img/Lateral.webp" class="product-img" alt="Producto Lateral">
-          </div>
-        </div><!-- End slide -->
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="product-item">
-            <img src="assets/img/Frontal.jpeg" class="product-img" alt="Producto Frontal">
-          </div>
-        </div><!-- End slide -->
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="product-item">
-            <img src="assets/img/Detalle.jpeg" class="product-img" alt="Detalle Producto">
-          </div>
-        </div><!-- End slide -->
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="product-item">
-            <img src="assets/img/Producto4.jpeg" class="product-img" alt="Producto 4">
-          </div>
-        </div><!-- End slide -->
-
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </div>
-
-</section><!-- /Carousel Section -->
 
 <!-- Services Section -->
 
@@ -270,68 +199,9 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Ficha técnica</h2>
-        <p>Estos son los detalles técnicos más importantes de Mystique</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4 justify-content-between">
-          <div class="features-image col-lg-5 order-lg-2 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/VideoGIF.gif" class="img-fluid" alt=""></div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
-
-            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-archive flex-shrink-0"></i>
-              <div>
-                <h4>Est labore ad</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-basket flex-shrink-0"></i>
-              <div>
-                <h4>Harum esse qui</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-broadcast flex-shrink-0"></i>
-              <div>
-                <h4>Aut occaecati</h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-camera-reels flex-shrink-0"></i>
-              <div>
-                <h4>Cable retractil</h4>
-                <p>Con sus 5,5 metros de cablre retractil vas a poder llegar a cada rincón sin precuparte por el guardado y los cables enredados.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Features Section -->
-
-    <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section"> 
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Testimonios de celebridades</h2>
-    <p>Descubí como Mystique le cambió la vida a estas figuras. </p>
-  </div><!-- End Section Title -->
+<!-- Carrousel Section -->
+<section id="product-carousel" class="carousel section"> 
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -342,6 +212,149 @@
           "speed": 600,
           "autoplay": {
             "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 20
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="assets/img/Lateral.webp" class="product-img" alt="Producto Lateral">
+          </div>
+        </div><!-- End slide -->
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="assets/img/Frontal.jpeg" class="product-img" alt="Producto Frontal">
+          </div>
+        </div><!-- End slide -->
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="assets/img/Detalle.jpeg" class="product-img" alt="Detalle Producto">
+          </div>
+        </div><!-- End slide -->
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="product-item">
+            <img src="assets/img/Producto4.jpeg" class="product-img" alt="Producto 4">
+          </div>
+        </div><!-- End slide -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Carousel Section -->
+
+
+<!-- Features Section -->
+<section id="features" class="features section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Accesorios</h2>
+    <p>Una boquilla para cada rincón de tu casa</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4 justify-content-between">
+      <div class="features-image col-lg-5 order-lg-2 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/Accesorios .png" class="img-fluid" alt="" style="transform: scale(1.2);">
+    </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+     <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+  <img src="assets/img/Pico4.png" class="feature-icon flex-shrink-0" alt="Boquilla para todo tipo de pisos">
+  <div>
+    <h4>Boquilla para todo tipo de pisos</h4>
+    <p>Para pisos fríos, laminados, y alfombras con la misma eficiencia. Con función de regulación para mayor versatilidad.</p>
+  </div>
+</div><!-- End Features Item-->
+
+<div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+  <img src="assets/img/Pico2.png" class="feature-icon flex-shrink-0" alt="Boquilla tapicera">
+  <div>
+    <h4>Boquilla tapicera</h4>
+    <p>Ideal para la limpieza de sofás, alfombras, y asientos de auto.</p>
+  </div>
+</div><!-- End Features Item-->
+
+<div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+  <img src="assets/img/Pico3.png" class="feature-icon flex-shrink-0" alt="Boquilla Turbo Clean">
+  <div>
+    <h4>Boquilla Turbo Clean</h4>
+    <p>Ideal para remover el pelo de los animales domésticos, ya que posee un cepillo giratorio que los elimina fácilmente de los sofás, alfombras y otros tejidos.</p>
+  </div>
+</div><!-- End Features Item-->
+
+<div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+  <img src="assets/img/Pico1.png" class="feature-icon flex-shrink-0" alt="Boquilla para esquinas y ranuras">
+  <div>
+    <h4>Boquilla para esquinas y ranuras</h4>
+    <p>Ideal para limpiar grietas y zonas de difícil acceso; utiliza el cepillo para la limpieza de superficies delicadas como muebles de madera, libros, etc.</p>
+  </div>
+</div><!-- End Features Item-->
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Features Section --
+
+
+
+<!-- Sección con imagen como contenido que ocupa el ancho completo -->
+<section class="separator-bg">
+  <div class="container-fluid p-0 position-relative">
+    <img src="assets/img/Panoramica.jpeg" class="img-fluid w-100" alt="Imagen panorámica">
+    <div class="overlay-text">
+      <h1>Tu hogar al máximo</h1>
+    </div>
+  </div>
+</section>
+
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section"> 
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonios de celebridades</h2>
+    <p>Descubrí como Mystique le cambió la vida a estas figuras. </p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 8000
           },
           "slidesPerView": "auto",
           "pagination": {
@@ -396,7 +409,7 @@
           <div class="testimonial-item">
             <p>
               <i class="bi bi-quote quote-icon-left"></i>
-              <span>"¡No sabés lo que es la Mystique! Es un caño, te juro. La enchufás y listo, empieza a aspirar como loca. Es más rápida que Mirko corriendo por toda la casa (risas). ¡Es tan práctica que me olvidé de lo que es limpiar a mano!"</span>
+              <span>"¡No sabés lo que es la Mystique! Es un caño, te juro. La enchufás y listo, empieza a aspirar como loca. Es más rápida que Mirko corriendo por toda la casa jajaja. ¡Es tan práctica que me olvidé de lo que es limpiar a mano!"</span>
               <i class="bi bi-quote quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/Marley.jpeg" class="testimonial-img" alt="">
@@ -434,14 +447,14 @@
         </div><!-- End testimonial item -->
 
       </div>
-      <div class="swiper-pagination"></div>
+     <div class="swiper-pagination"></div> 
     </div>
 
   </div>
 
 </section><!-- /Testimonials Section -->
   
- 
+
     <!-- Preguntas frecuentes Section -->
     <section id="faq" class="faq section">
 
@@ -522,8 +535,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Electrolux</span>
           </a>
-          <p>Accede a nuestros Términos y Condiciones y Política de privacidad
-          Todos los precios y condiciones de este sitio son válidos sólo para compras en el sitio y en Argentina. </p>
+          <p>Visitá nuestras redes sociales. </p>
           <div class="social-links d-flex mt-4">
             <a href="https://twitter.com/Electrolux" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
             <a href="https://www.facebook.com/Electrolux" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
@@ -532,47 +544,13 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Términos del servicio</a></li>
-            <li><a href="#">Politicas de privacidad</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Nuestros servicios</h4>
-          <ul>
-            <li><a href="#">Mantenimiento</a></li>
-            <li><a href="#">Repuestos</a></li>
-            <li><a href="#">Service oficial</a></li>
-            <li><a href="#">Accesorios</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contacto</h4>
-          <p>Av. Battle Y Ordóñez 3436</p>
-          <p>Rosario, San Fé</p>
-          <p>Argentina</p>
-          <p class="mt-4"><strong>Teléfono:</strong> <span>0800 222 3589</span></p>
-          <p><strong>Email:</strong> <span>info@electrolux.com.ar</span></p>
-        </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Electrolux</strong> <span>Todos los derechos reservados</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <p><span>Cátedra</span> <strong class="px-1 sitename">Belluccia</strong> <span>Comisión 2</span></p>
+      <div class="credits">Daro Fabián Guardiola 
       </div>
     </div>
 
