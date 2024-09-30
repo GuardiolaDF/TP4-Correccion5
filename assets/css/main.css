@@ -93,10 +93,29 @@ img {
     max-width: 100%; /* Asegúrate de que la imagen no supere el 100% del contenedor */
     height: auto; /* Mantiene la proporción */
   }
+  @media (max-width: 768px) {
+    .panoramic-screen-text {
+      font-size: 5vw; /* Ajusta este valor según lo que funcione mejor */
+      padding: 0 10px; /* Asegura que no quede pegado a los márgenes */
+      text-align: center; /* Centra el texto */
+      /* Puedes agregar más estilos si es necesario */
+    }
+  
+    /* Asegúrate de que el contenedor de la imagen panorámica tenga el padding necesario */
+    .panoramic-screen {
+      padding: 20px; /* Ajusta este valor según sea necesario */
+      position: relative; /* Para que los hijos se posicionen en relación a este contenedor */
+    }
+  }
 
-  .panoramic-screen-text {
-    font-size: 3vw; /* Ajusta el tamaño del texto de acuerdo al ancho de la pantalla */
-    padding: 0 10px; /* Asegura que no quede pegado a los márgenes */
+  .panoramic-screen {
+    width: 100%; /* Asegura que el contenedor use el 100% del ancho */
+    overflow: hidden; /* Evita que se desborde */
+  }
+  
+  .panoramic-screen img {
+    width: 100%; /* Asegura que la imagen use el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
   }
 
   h1, h2, h3, p {
