@@ -46,7 +46,46 @@
   color: #800020; /* Aquí puedes ajustar el valor hexadecimal a tu tono de bordó */
 }
 
+----------------------
+body {
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  padding: 0 15px; /* Ajusta según sea necesario */
+}
+
+.section {
+  margin: 20px 0; /* Margen entre secciones */
+  padding: 20px; /* Relleno interno de cada sección */
+}
+
+img {
+  max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+  height: auto; /* Mantiene la proporción */
+  object-fit: contain; /* Ajusta la imagen sin recortes */
+}
+
+/* Media queries */
+@media (min-width: 992px) {
+  .features-image {
+    padding: 0; /* Elimina el margen lateral en pantallas grandes */
+  }
+}
+
+@media (max-width: 991px) {
+  .features-image {
+    padding: 15px; /* Añade margen lateral en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .features-image {
+    padding: 10px; /* Reduce el margen lateral en pantallas pequeñas */
+  }
+}
+-----------------------
 .icon,
 .feature-icon {
   width: 60px; /* Tamaño ajustado para que sean uniformes */
